@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="border">
+        <form id="calc" method="post">
+            Insert Number A <input class="text" id="num1" type="text" name="number" onkeypress="validate(event)" /><br> Insert Number B <input class="text" id="num2" type="text" name="number" onkeypress="validate(event)" /><br> Result Number <input class="text" id="num3" type="text" name="number" onkeypress="validateRes(event)" /><br>
+            <input class="button1" id="add" type="button" onclick="return doAdd()" value="A + B">
+            <input class="button1" id="minusAB" type="button" onclick="return doAB()" value="A - B">
+            <input class="button1" id="minusBA" type="button" onclick="return doBA()" value="B - A"><br>
+            <input class="button1" id="AxB" type="button" onclick="return doAxB()" value="A * B">
+            <input class="button1" id="divideAB" type="button" onclick="return divAB()" value="A / B">
+            <input class="button1" id="divideBA" type="button" onclick="return divBA()" value="B / A">
+            <input class="button1" id="clear" type="button" onclick="return doClear()" value="CLEAR">
+        </form>
+    </div>
+
+
+ <script src="script.js"></script>
+</body>
+
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
